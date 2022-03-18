@@ -194,7 +194,7 @@ button {
 }
 .banner__bottom .bottom__card:hover, .banner__bottom .bottom__card:hover span {
   color: white;
-  border-image: linear-gradient(90deg, red, white 30%);
+  border-image: linear-gradient(90deg, #f38281, white 40%);
   border-image-slice: 1;
 }
 
