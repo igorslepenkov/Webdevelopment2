@@ -1,0 +1,25 @@
+.banner {
+    height: 92.2%;
+}
+
+.banner__head {
+    @include head(rgb(255, 255, 255), rgb(255, 255, 255));
+    flex-grow: 1;
+}
+
+.banner__bottom {
+    @include flex_align_center-between;
+    width: 100%;
+
+    .bottom__card {
+        width: 24%;
+    }
+}
+
+.banner__button {
+    width: 23.01rem;
+    height: 4.85rem;
+    margin: 6.84% 0 11.20% 0;
+    background: transparent;
+    border: 4px solid rgb(255, 255, 255);
+}
