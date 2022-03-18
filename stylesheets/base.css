@@ -132,7 +132,7 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
-  flex-grow: 1;
+  flex-grow: 2;
 }
 .banner__head > * {
   margin: 0;
@@ -156,23 +156,46 @@ button {
   border-color: white;
 }
 
+.banner__middle {
+  flex-grow: 1;
+}
+.banner__middle .banner__button {
+  width: 23.01rem;
+  height: 4.85rem;
+  margin: 0;
+  background: transparent;
+  border: 4px solid white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
 .banner__bottom {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  flex-grow: 1;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #f9efcf;
+  text-transform: uppercase;
 }
 .banner__bottom .bottom__card {
   width: 24%;
+  border-top: 4px solid #f9efcf;
+  cursor: pointer;
 }
-
-.banner__button {
-  width: 23.01rem;
-  height: 4.85rem;
-  margin: 6.84% 0 11.2% 0;
-  background: transparent;
-  border: 4px solid white;
+.banner__bottom .bottom__card span {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #f9efcf;
+}
+.banner__bottom .bottom__card:hover, .banner__bottom .bottom__card:hover span {
+  color: white;
+  border-image: linear-gradient(90deg, red, white 30%);
+  border-image-slice: 1;
 }
 
 /*# sourceMappingURL=base.css.map */

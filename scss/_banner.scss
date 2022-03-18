@@ -4,22 +4,41 @@
 
 .banner__head {
     @include head(rgb(255, 255, 255), rgb(255, 255, 255));
+    flex-grow: 2;
+}
+
+.banner__middle {
     flex-grow: 1;
+    .banner__button {
+        width: 23.01rem;
+        height: 4.85rem;
+        margin: 0;
+        background: transparent;
+        border: 4px solid rgb(255, 255, 255);
+        @include font3(rgb(255, 255, 255));
+    }
 }
 
 .banner__bottom {
     @include flex_align_center-between;
     width: 100%;
+    flex-grow: 1;
+    @include font5($light_yellow);
+    text-transform: uppercase;
 
     .bottom__card {
         width: 24%;
-    }
-}
+        border-top: 4px solid $light_yellow;
+        cursor: pointer;
+        span {
+            @include font3($light_yellow);
+        }
 
-.banner__button {
-    width: 23.01rem;
-    height: 4.85rem;
-    margin: 6.84% 0 11.20% 0;
-    background: transparent;
-    border: 4px solid rgb(255, 255, 255);
+        &:hover,
+        &:hover span {
+            color: rgb(255, 255, 255);
+            border-image: linear-gradient(90deg, rgb(255, 0, 0), rgb(255, 255, 255) 30%);
+            border-image-slice: 1;
+        }
+    }
 }
