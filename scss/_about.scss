@@ -1,0 +1,47 @@
+.about {
+    @include flex_align_center(column);
+    .about__head {
+        margin-top: 6%;
+        @include head($black, $tomato);
+    }
+
+    & > p {
+        @include font5;
+    }
+
+    .about__cards {
+        width: 100%;
+        margin: 7.5rem;
+        @include flex_align_center-between;
+
+        .about__card {
+            width: 23.13rem;
+            height: 21.13rem;
+            cursor: pointer;
+
+            &:nth-child(odd) {
+                background-image: url(../about__cards/about2.png);
+            }
+
+            &:nth-child(even) {
+                background-image: url(../about__cards/about1.png);  
+            }
+
+            &:hover > .card__content {
+                opacity: .9;
+                transform: translate(-5%, -5%);
+            }
+
+            .card__content {
+                @include flex_align_center(column);
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                transition: all 0.9s ease-in-out;
+            }
+        }
+    }
+}

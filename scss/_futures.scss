@@ -1,0 +1,7 @@
+.futures__wrap {
+    background-color: $light_blue;
+
+    .futures {
+        @include flex_align_center-between;
+    }
+}

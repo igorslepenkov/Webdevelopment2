@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    max-width: 100%;
 }
 
 .background {
@@ -15,6 +16,10 @@ body {
 .opacity {
     width: 100%;
     height: 100%;
+}
+
+.wrap {
+    width: 100%;
 }
 
 .section {

@@ -4,6 +4,7 @@
     height: 0px;
     border: 2px solid;
     border-color: $color;
+    background-color: $color;
 }
 
 @mixin flex_align_center($direction : row) {
