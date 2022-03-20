@@ -5,31 +5,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
-@mixin font1($color:black) {
+@mixin font1($color:$black) {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: $color;
 }
 
-@mixin font2($color:black) {
+@mixin font2($color:$black) {
     font-family: 'Kaushan Script', cursive;
     font-weight: 400;
     color: $color;
 }
 
-@mixin font3($color:black) {
+@mixin font3($color:$black) {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: $color;
 }
 
-@mixin font4($color:black) {
+@mixin font4($color:$black) {
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     color: $color;
 }
 
-@mixin font5($color:black) {
+@mixin font5($color:$black) {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: $color;

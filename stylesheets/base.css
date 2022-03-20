@@ -52,13 +52,10 @@ body {
   height: 100%;
 }
 
-.wrap {
-  width: 100%;
-}
-
 .section {
   max-width: 100%;
   margin: 0 11.5%;
+  margin-bottom: 3.13rem;
   max-height: 100%;
   display: flex;
   flex-direction: column;
@@ -212,9 +209,9 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .about .about__head {
-  margin-top: 6%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -243,18 +240,22 @@ button {
   border-color: #f38281;
   background-color: #f38281;
 }
+.about .about__head .head__h {
+  line-height: 5.1rem;
+}
 .about > p {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  color: black;
+  color: #2d3033;
+  margin: 3.75rem;
 }
 .about .about__cards {
   width: 100%;
-  margin: 7.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3.13rem;
 }
 .about .about__cards .about__card {
   width: 23.13rem;
@@ -293,6 +294,187 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.futures__wrap .futures .futures__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-left: 1px solid white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+.futures__wrap .futures .futures__card p:nth-child(1) {
+  margin: 0;
+}
+.futures__wrap .futures .futures__card:last-child {
+  border-right: 1px solid white;
+}
+
+.amazing-services .amazing-services__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.amazing-services .amazing-services__head > * {
+  margin: 0;
+}
+.amazing-services .amazing-services__head > .head__p {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  color: #2d3033;
+}
+.amazing-services .amazing-services__head > .head__h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin: 4.4% 0;
+}
+.amazing-services .amazing-services__head > .head__hr {
+  width: 10.63rem;
+  height: 0px;
+  border: 2px solid;
+  border-color: #f38281;
+  background-color: #f38281;
+}
+.amazing-services .amazing-services__head .head__h {
+  line-height: 5.1rem;
+}
+.amazing-services .amazing-services__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 4%;
+  grid-row-gap: 3.25rem;
+}
+.amazing-services .amazing-services__cards .amazing-services__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.amazing-services .amazing-services__cards .amazing-services__card .card__text p:nth-child(1) {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #2d3033;
+  text-transform: uppercase;
+}
+.amazing-services .amazing-services__cards .amazing-services__card .card__text p:nth-child(2) {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #2d3033;
+}
+.amazing-services .amazing-services__cards .c1 {
+  grid-area: 1/1/2/2;
+}
+.amazing-services .amazing-services__cards .c1::before {
+  content: url(../amazing-services_icons/1.svg);
+  margin-right: 8.1%;
+}
+.amazing-services .amazing-services__cards .c2 {
+  grid-area: 1/2/2/3;
+}
+.amazing-services .amazing-services__cards .c2::before {
+  content: url(../amazing-services_icons/2.svg);
+  margin-right: 8.1%;
+}
+.amazing-services .amazing-services__cards .c3 {
+  grid-area: 1/3/2/4;
+}
+.amazing-services .amazing-services__cards .c3::before {
+  content: url(../amazing-services_icons/3.svg);
+  margin-right: 8.1%;
+}
+.amazing-services .amazing-services__cards .c4 {
+  grid-area: 2/1/3/2;
+}
+.amazing-services .amazing-services__cards .c4::before {
+  content: url(../amazing-services_icons/4.svg);
+  margin-right: 8.1%;
+}
+.amazing-services .amazing-services__cards .c5 {
+  grid-area: 2/2/3/3;
+}
+.amazing-services .amazing-services__cards .c5::before {
+  content: url(../amazing-services_icons/5.svg);
+  margin-right: 8.1%;
+}
+.amazing-services .amazing-services__cards .c6 {
+  grid-area: 2/3/3/4;
+}
+.amazing-services .amazing-services__cards .c6::before {
+  content: url(../amazing-services_icons/6.svg);
+  margin-right: 8.1%;
+}
+
+.all-devices__background {
+  background-image: url(../background-images/all-devices.png);
+}
+.all-devices__background .all-devices__background-opacity {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.all-devices .all-devices__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.all-devices .all-devices__head > * {
+  margin: 0;
+}
+.all-devices .all-devices__head > .head__p {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  color: #2d3033;
+}
+.all-devices .all-devices__head > .head__h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin: 4.4% 0;
+}
+.all-devices .all-devices__head > .head__hr {
+  width: 10.63rem;
+  height: 0px;
+  border: 2px solid;
+  border-color: #f38281;
+  background-color: #f38281;
+}
+.all-devices .all-devices__head .head__h {
+  line-height: 5.1rem;
+}
+.all-devices .all-devices__content {
+  position: relative;
+  margin-bottom: 3.75rem;
+}
+.all-devices .all-devices__content .tablet-container {
+  position: relative;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+.all-devices .all-devices__content .tablet-content {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.all-devices .all-devices__content .smartphone {
+  position: absolute;
+  bottom: -20%;
+  left: 65%;
 }
 
 /*# sourceMappingURL=base.css.map */

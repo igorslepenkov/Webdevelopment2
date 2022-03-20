@@ -1,18 +1,22 @@
 .about {
     @include flex_align_center(column);
+    text-align: center;
     .about__head {
-        margin-top: 6%;
         @include head($black, $tomato);
+        .head__h {
+            line-height: 5.1rem;
+        }
     }
 
     & > p {
         @include font5;
+        margin: 3.75rem;
     }
 
     .about__cards {
         width: 100%;
-        margin: 7.5rem;
         @include flex_align_center-between;
+        margin-bottom: 3.13rem;
 
         .about__card {
             width: 23.13rem;
