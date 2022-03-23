@@ -55,7 +55,7 @@ body {
 .section {
   max-width: 100%;
   margin: 0 11.5%;
-  margin-bottom: 3.13rem;
+  margin-bottom: 6rem;
   max-height: 100%;
   display: flex;
   flex-direction: column;
@@ -475,6 +475,266 @@ button {
   position: absolute;
   bottom: -20%;
   left: 65%;
+}
+
+.service {
+  text-align: center;
+}
+.service .service__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.service .service__head > * {
+  margin: 0;
+}
+.service .service__head > .head__p {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  color: #2d3033;
+}
+.service .service__head > .head__h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin: 4.4% 0;
+}
+.service .service__head > .head__hr {
+  width: 10.63rem;
+  height: 0px;
+  border: 2px solid;
+  border-color: #f38281;
+  background-color: #f38281;
+}
+.service .service__head .head__h {
+  line-height: 5.1rem;
+}
+.service > p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #2d3033;
+  margin: 3.75rem;
+}
+.service .service__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.service .service__content .content__left {
+  margin-right: 2%;
+}
+.service .service__content .content__left img {
+  max-width: 35.63rem;
+  max-height: 30.19rem;
+}
+.service .service__content .content__right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.service .service__content .content__right .content__card {
+  width: 100%;
+  border: 1px solid #c6cbcd;
+  max-width: 35.63rem;
+}
+.service .service__content .content__right .content__card .scroll {
+  max-height: 7rem;
+  overflow-y: scroll;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #2d3033;
+  display: none;
+  scrollbar-width: 6px;
+  scrollbar-color: #95e1d3;
+  box-sizing: border-box;
+  border-top: 1px solid #c6cbcd;
+  padding: 5px;
+}
+.service .service__content .content__right .content__card .scroll::-webkit-scrollbar {
+  width: 6px;
+  background-color: whitesmoke;
+}
+.service .service__content .content__right .content__card .scroll::-webkit-scrollbar-thumb {
+  background-color: #95e1d3;
+}
+.service .service__content .content__right .content__card .opened {
+  display: block;
+}
+.service .service__content .content__right .content__card .card__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+.service .service__content .content__right .content__card .card__button h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #2d3033;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.service .service__content .content__right .card1 h3::before {
+  content: url(../service_content/icon1.svg);
+  margin-right: 1.9rem;
+}
+.service .service__content .content__right .card2 h3::before {
+  content: url(../service_content/icon2.svg);
+  margin-right: 1.9rem;
+}
+.service .service__content .content__right .card3 h3::before {
+  content: url(../service_content/icon3.svg);
+  margin-right: 1.9rem;
+}
+
+.out-work {
+  text-align: center;
+}
+.out-work .out-work__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.out-work .out-work__head > * {
+  margin: 0;
+}
+.out-work .out-work__head > .head__p {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  color: #2d3033;
+}
+.out-work .out-work__head > .head__h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin: 4.4% 0;
+}
+.out-work .out-work__head > .head__hr {
+  width: 10.63rem;
+  height: 0px;
+  border: 2px solid;
+  border-color: #f38281;
+  background-color: #f38281;
+}
+.out-work .out-work__head .head__h {
+  line-height: 5.1rem;
+}
+.out-work p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #2d3033;
+  margin: 3.75rem;
+}
+.out-work .out-work__gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.out-work .out-work__gallery .gallery__picture {
+  display: flex;
+  align-items: center;
+}
+.out-work .out-work__gallery .picture3 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+@media (max-width: 320px) {
+  .out-work .out-work__gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .out-work .out-work__gallery .picture1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .out-work .out-work__gallery .picture2 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .out-work .out-work__gallery .picture3 {
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+  .out-work .out-work__gallery .picture4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .out-work .out-work__gallery .picture5 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .out-work .out-work__gallery .picture6 {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+  .out-work .out-work__gallery .picture7 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+.reviews-wrap {
+  max-width: 100%;
+  background-color: #f8f8f8;
+}
+.reviews-wrap .reviews {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews-wrap .reviews .reviews__icon {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews-wrap .reviews .reviews__icon::before {
+  content: url(../service_content/arrow_down.svg);
+  transform: rotate(270deg);
+  margin-right: 3.5rem;
+}
+.reviews-wrap .reviews .reviews__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews-wrap .reviews .reviews__content::after {
+  content: url(../service_content/arrow_down.svg);
+  transform: rotate(90deg);
+  margin-left: 3.5rem;
+}
+.reviews-wrap .reviews .reviews__content .text__article {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #a9afb1;
+  font-style: italic;
+}
+.reviews-wrap .reviews .reviews__content .content__name {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  color: #2d3033;
+}
+.reviews-wrap .reviews .reviews__content .content__name::before {
+  display: inline-block;
+  content: url(../reviews__icons/divider.svg);
+  margin-right: 3.5rem;
+  transform: translate(0, -20%);
 }
 
 /*# sourceMappingURL=base.css.map */

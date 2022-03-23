@@ -33,6 +33,32 @@
     }
 }
 
+@mixin flex_align_start-between($direction : row) {
+    display: flex;
+    @if $direction == column {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    } @else {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+@mixin flex_align_start-center($direction : row) {
+    display: flex;
+    @if $direction == column {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    } @else {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
 @mixin flex_align_center-around($direction : row) {
     display: flex;
     @if $direction == column {
