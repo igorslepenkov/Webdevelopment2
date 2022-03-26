@@ -13,6 +13,7 @@
                 content: url(../service_content/arrow_down.svg);
                 transform: rotate(270deg);
                 margin-right: 3.5rem;
+                cursor: pointer;
             }
         }
 
@@ -22,6 +23,7 @@
                 content: url(../service_content/arrow_down.svg);
                 transform: rotate(90deg);
                 margin-left: 3.5rem;
+                cursor: pointer;
             }
 
             .text__article {

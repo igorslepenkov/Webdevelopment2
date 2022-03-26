@@ -5,7 +5,7 @@
 
         for(element of buttonArea) {
             const button = document.createElement('div');
-            button.innerHTML = '<img src=../service_content/arrow_down.svg>';
+            button.innerHTML = '<img src=./service_content/arrow_down.svg>';
             button.style.transform = 'rotate(540deg)';
             button.style.transition = 'all 1.5s cubic-bezier(.31,1.75,.24,-0.57)'
             button.style.cursor = 'pointer';

@@ -166,6 +166,7 @@ button {
   flex-grow: 1;
 }
 .banner__middle .banner__button {
+  box-sizing: border-box;
   width: 23.01rem;
   height: 4.85rem;
   margin: 11% 0;
@@ -174,6 +175,13 @@ button {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   color: white;
+}
+.banner__middle .banner__button:hover {
+  background-color: white;
+  color: #f4bf87;
+}
+.banner__middle .banner__button:active {
+  border: 4px solid #e4be8d;
 }
 
 .banner__bottom {
@@ -597,6 +605,176 @@ button {
   margin-right: 1.9rem;
 }
 
+.reviews-wrap {
+  max-width: 100%;
+  background-color: #f8f8f8;
+}
+.reviews-wrap .reviews {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews-wrap .reviews .reviews__icon {
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews-wrap .reviews .reviews__icon::before {
+  content: url(../service_content/arrow_down.svg);
+  transform: rotate(270deg);
+  margin-right: 3.5rem;
+  cursor: pointer;
+}
+.reviews-wrap .reviews .reviews__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews-wrap .reviews .reviews__content::after {
+  content: url(../service_content/arrow_down.svg);
+  transform: rotate(90deg);
+  margin-left: 3.5rem;
+  cursor: pointer;
+}
+.reviews-wrap .reviews .reviews__content .text__article {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #a9afb1;
+  font-style: italic;
+}
+.reviews-wrap .reviews .reviews__content .content__name {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  color: #2d3033;
+}
+.reviews-wrap .reviews .reviews__content .content__name::before {
+  display: inline-block;
+  content: url(../reviews__icons/divider.svg);
+  margin-right: 3.5rem;
+  transform: translate(0, -20%);
+}
+
+.our-team {
+  text-align: center;
+}
+.our-team .our-team__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.our-team .our-team__head > * {
+  margin: 0;
+}
+.our-team .our-team__head > .head__p {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  color: #2d3033;
+}
+.our-team .our-team__head > .head__h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin: 4.4% 0;
+}
+.our-team .our-team__head > .head__hr {
+  width: 10.63rem;
+  height: 0px;
+  border: 2px solid;
+  border-color: #f38281;
+  background-color: #f38281;
+}
+.our-team .our-team__head .head__h {
+  line-height: 5.1rem;
+}
+.our-team p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #2d3033;
+  margin: 3.75rem;
+}
+.our-team .our-team__cards {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our-team .our-team__cards .team__card {
+  max-width: 32%;
+}
+.our-team .our-team__cards .team__card .card__content {
+  max-width: 100%;
+}
+.our-team .our-team__cards .team__card .card__content .content__top {
+  max-width: 100%;
+  position: relative;
+}
+.our-team .our-team__cards .team__card .card__content .content__top img {
+  width: 100%;
+  height: 100%;
+}
+.our-team .our-team__cards .team__card .card__content .content__top .content__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+  transition: all 0.9s ease-in-out;
+  opacity: 0;
+}
+.our-team .our-team__cards .team__card .card__content .content__top .content__logo:hover {
+  opacity: 0.9;
+  transform: translate(-5%, -5%);
+}
+.our-team .our-team__cards .team__card .card__content .content__top .content__logo i {
+  background-color: #f9efcf;
+  padding: 10px 5px;
+  color: #f38281;
+  cursor: pointer;
+}
+.our-team .our-team__cards .team__card .card__content .content__top .content__logo i:hover {
+  background-color: #f38281;
+  color: white;
+}
+.our-team .our-team__cards .team__card .card__content .content__bottom {
+  text-transform: uppercase;
+}
+.our-team .our-team__cards .team__card .card__content .content__bottom .content__name {
+  margin: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #2d3033;
+  white-space: nowrap;
+}
+.our-team .our-team__cards .team__card .card__content .content__bottom .content__position {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #2d3033;
+}
+
+.partners-wrap {
+  background-color: #f8f8f8;
+}
+.partners-wrap .partners {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .out-work {
   text-align: center;
 }
@@ -686,55 +864,235 @@ button {
     grid-row: 3/4;
   }
 }
-.reviews-wrap {
-  max-width: 100%;
-  background-color: #f8f8f8;
+.happy-clients-wrap {
+  background-image: url(../happy-clients/clients_background.png);
 }
-.reviews-wrap .reviews {
+.happy-clients-wrap .wrap-opacity {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.happy-clients {
+  padding-bottom: 3rem;
+}
+.happy-clients .happy-clients__head {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
 }
-.reviews-wrap .reviews .reviews__icon {
-  margin-right: 2rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+.happy-clients .happy-clients__head > * {
+  margin: 0;
 }
-.reviews-wrap .reviews .reviews__icon::before {
-  content: url(../service_content/arrow_down.svg);
-  transform: rotate(270deg);
-  margin-right: 3.5rem;
-}
-.reviews-wrap .reviews .reviews__content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.reviews-wrap .reviews .reviews__content::after {
-  content: url(../service_content/arrow_down.svg);
-  transform: rotate(90deg);
-  margin-left: 3.5rem;
-}
-.reviews-wrap .reviews .reviews__content .text__article {
-  font-family: "Raleway", sans-serif;
-  font-weight: 900;
-  color: #a9afb1;
-  font-style: italic;
-}
-.reviews-wrap .reviews .reviews__content .content__name {
+.happy-clients .happy-clients__head > .head__p {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
   color: #2d3033;
 }
-.reviews-wrap .reviews .reviews__content .content__name::before {
-  display: inline-block;
-  content: url(../reviews__icons/divider.svg);
-  margin-right: 3.5rem;
-  transform: translate(0, -20%);
+.happy-clients .happy-clients__head > .head__h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin: 4.4% 0;
+}
+.happy-clients .happy-clients__head > .head__hr {
+  width: 10.63rem;
+  height: 0px;
+  border: 2px solid;
+  border-color: #f38281;
+  background-color: #f38281;
+}
+.happy-clients .happy-clients__head .head__h {
+  line-height: 5.1rem;
+}
+
+.happy-clients__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.happy-clients__cards .clients__card {
+  display: flex;
+  justify-content: space-between;
+}
+.happy-clients__cards .clients__card .card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.happy-clients__cards .clients__card .card__content .card__name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin: 0;
+}
+.happy-clients__cards .clients__card .card__content .card__position {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.happy-clients__cards .clients__card .card__content .card__separator {
+  width: 4.4rem;
+  border: 1.5px solid #f38281;
+  background-color: #f38281;
+  margin: 0;
+}
+.happy-clients__cards .clients__card .card__content .card__text {
+  margin: 2rem 0;
+}
+.happy-clients__cards .card1::before {
+  content: url(../happy-clients/client1.png);
+  margin-right: 3rem;
+}
+.happy-clients__cards .card2::before {
+  content: url(../happy-clients/client2.png);
+  margin-right: 3rem;
+}
+.happy-clients__cards .card3::before {
+  content: url(../happy-clients/client3.png);
+  margin-right: 3rem;
+}
+.happy-clients__cards .card4::before {
+  content: url(../happy-clients/client4.png);
+  margin-right: 3rem;
+}
+
+.our-stories .our-stories__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.our-stories .our-stories__head > * {
+  margin: 0;
+}
+.our-stories .our-stories__head > .head__p {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  color: #2d3033;
+}
+.our-stories .our-stories__head > .head__h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #2d3033;
+  text-transform: uppercase;
+  margin: 4.4% 0;
+}
+.our-stories .our-stories__head > .head__hr {
+  width: 10.63rem;
+  height: 0px;
+  border: 2px solid;
+  border-color: #f38281;
+  background-color: #f38281;
+}
+.our-stories .our-stories__head .head__h {
+  line-height: 5.1rem;
+}
+.our-stories .our-stories__cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2%;
+}
+.our-stories .our-stories__cards .card__image {
+  position: relative;
+}
+.our-stories .our-stories__cards .card__image img {
+  width: 100%;
+  height: 100%;
+}
+.our-stories .our-stories__cards .card__image::before {
+  content: url(../our-stories/data.png);
+  position: absolute;
+  bottom: 10%;
+  left: -3%;
+}
+.our-stories .our-stories__cards .card__text .text__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #2d3033;
+  text-transform: uppercase;
+}
+.our-stories .our-stories__cards .card__text .text__body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #2d3033;
+}
+.our-stories .our-stories__cards .card__bottom {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8%;
+}
+.our-stories .our-stories__cards .card__bottom .views::before {
+  content: url(../our-stories/views.svg);
+  margin-right: 1rem;
+}
+.our-stories .our-stories__cards .card__bottom .comments::before {
+  content: url(../our-stories/comments.svg);
+  margin-right: 1rem;
+}
+
+.map-wrap {
+  background-image: url(../our-stories/map-back.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.map-wrap .wrap-opacity {
+  background: rgba(255, 255, 255, 0.9);
+}
+.map-wrap .wrap-opacity .map {
+  padding: 3rem;
+}
+.map-wrap .wrap-opacity .map .map__head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.map-wrap .wrap-opacity .map .map__head::before {
+  content: url(../our-stories/map.svg);
+}
+.map-wrap .wrap-opacity .map .map__head > * {
+  margin: 0;
+}
+.map-wrap .wrap-opacity .map .map__head > .head__p {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  color: #f38281;
+}
+.map-wrap .wrap-opacity .map .map__head > .head__h {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #f38281;
+  text-transform: uppercase;
+  margin: 4.4% 0;
+}
+.map-wrap .wrap-opacity .map .map__head > .head__hr {
+  width: 10.63rem;
+  height: 0px;
+  border: 2px solid;
+  border-color: #f38281;
+  background-color: #f38281;
+}
+.map-wrap .wrap-opacity .map .map__head .head__h {
+  line-height: 5.1rem;
+  margin: 2rem 0;
+  margin-top: 0;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    margin: 0 1.5% 3.5rem;
+  }
 }
 
 /*# sourceMappingURL=base.css.map */

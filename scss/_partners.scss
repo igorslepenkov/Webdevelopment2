@@ -1,0 +1,7 @@
+.partners-wrap {
+    background-color: $main-white;
+
+    .partners {
+        @include flex_align_center-between;
+    }
+}
