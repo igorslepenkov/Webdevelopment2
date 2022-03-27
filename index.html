@@ -389,19 +389,26 @@
                 <source srcset="out_work_images/small/5.png" media="(min-width: 0px)">
                 <img src="out_work_images/big/5.png" alt="Fifth photo">
             </picture>
-            <picture class="gallery__picture picture6">
-                <source srcset="out_work_images/big/6.png" media="(min-width: 1024px)">
-                <source srcset="out_work_images/medium/6.png" media="(min-width: 320px)">
-                <source srcset="out_work_images/small/6.png" media="(min-width: 0px)">
-                <img src="out_work_images/big/6.png" alt="Sixth photo">
-            </picture>
+            <div class="picture6__container">
+                <div class="picture6__text">
+                    <img src="./out_work_images/challenge.svg" alt="Cup logo">
+                    <p class="fs5">creatively design</p>
+                    <p class="fs6">Lorem ipsum dolor sit</p>
+                </div>
+                <picture class="gallery__picture picture6">
+                    <source srcset="out_work_images/big/6.png" media="(min-width: 1024px)">
+                    <source srcset="out_work_images/medium/6.png" media="(min-width: 320px)">
+                    <source srcset="out_work_images/small/6.png" media="(min-width: 0px)">
+                    <img src="out_work_images/big/6.png" alt="Sixth photo">
+                </picture>
+            </div>
             <picture class="gallery__picture picture7">
                 <source srcset="out_work_images/big/7.png" media="(min-width: 1024px)">
                 <source srcset="out_work_images/medium/7.png" media="(min-width: 320px)">
                 <source srcset="out_work_images/small/7.png" media="(min-width: 0px)">
                 <img src="out_work_images/big/7.png" alt="Seventh photo">
             </picture>
-        </div>
+            </div>
     </section>
     <div class="reviews-wrap" style="background-color: rgb(255, 255, 255);">
         <section class="reviews section">
@@ -531,7 +538,6 @@
             </div>
         </div>
     </section>
-
     <div class="map-wrap">
         <div class="wrap-opacity">
             <section class="map section">
@@ -542,6 +548,78 @@
             </section>
         </div>
     </div>
+    <section class="bottom section">
+        <div class="bottom__cards">
+            <div class="bottom__card card1">
+                <img src="./bottom/MoGo.svg" alt="MoGo logo">
+                <p class="bottom__text fs5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius 
+                    vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.
+                </p>
+                <p class="followers fs5"><span class="fs36">15k </span>followers</p>
+                <hr>
+                <div class="bottom__follow">
+                    <p class="fs6">Follow Us</p>
+                    <a href="#"><img src="./bottom/facebook.svg" alt="facebook link"></a>
+                    <a href="#"><img src="./bottom/twitter.svg" alt="twitter link"></a>
+                    <a href="#"><img src="./bottom/instagram.svg" alt="instagram link"></a>
+                    <a href="#"><img src="./bottom/pinterest.svg" alt="pinterest link"></a>
+                    <a href="#"><img src="./bottom/linkedin.svg" alt="linkedin link"></a>
+                    <a href="#"><img src="./bottom/youtube.svg" alt="youtube link"></a>
+                    <a href="#"><img src="./bottom/dribble.svg" alt="dribble link"></a>
+                    <a href="#"><img src="./bottom/tiktok.svg" alt="tiktok link"></a>
+                </div>
+                <form action="#">
+                    <input class="fs5" type="email" placeholder="Your Email">
+                    <button class="fs5" type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="bottom__card card2">
+                <p class="card__title fs4">Blogs</p>
+                <div class="article">
+                    <img src="./bottom/article1.png" alt="Article photo">
+                    <div class="article__text">
+                        <p class="text fs5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="date fs6">jan.9.22.15</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <img src="./bottom/article2.png" alt="Article photo">
+                    <div class="article__text">
+                        <p class="text fs5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="date fs6">jan.9.22.15</p>
+                    </div>
+                </div>
+                <div class="article">
+                    <img src="./bottom/article3.png" alt="Article photo">
+                    <div class="article__text">
+                        <p class="text fs5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="date fs6">jan.9.22.15</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom__card card3">
+                <p class="card__title fs4">instagram</p>
+                <div class="card__gallery">
+                    <img src="./bottom/gallery/gallery1.png" alt="Photo 1">
+                    <img src="./bottom/gallery/gallery2.png" alt="Photo 2">
+                    <img src="./bottom/gallery/gallery3.png" alt="Photo 3">
+                    <img src="./bottom/gallery/gallery4.png" alt="Photo 4">
+                    <img src="./bottom/gallery/gallery5.png" alt="Photo 5">
+                    <img src="./bottom/gallery/gallery6.png" alt="Photo 6">
+                    <img src="./bottom/gallery/gallery7.png" alt="Photo 7">
+                    <img src="./bottom/gallery/gallery8.png" alt="Photo 8">
+                    <img src="./bottom/gallery/gallery9.png" alt="Photo 9">
+                </div>
+                <a class="fs6" href="#">See all photos</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer section">
+        <p class="fs6">Copyright © 2021 mogo. All Rights Reserved</p>
+    </footer>
 
     <script src="JS/service_content_buttons.js"></script>
     <script src="index.js"></script>

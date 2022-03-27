@@ -16,6 +16,7 @@
     .about__cards {
         width: 100%;
         @include flex_align_center-between;
+        gap: 1%;
         margin-bottom: 3.13rem;
 
         .about__card {

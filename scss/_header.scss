@@ -51,9 +51,12 @@
         @include font3(rgb(255, 255, 255))
     }  
 
-    &:hover > a,
-    &:hover > button {
+    &:hover > a {
         color: rgb(244, 191, 135);
         border-bottom: 1px solid rgb(244, 191, 135);
     }          
+
+    &:hover button {
+        color: rgb(244, 191, 135);
+    }
 }
