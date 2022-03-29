@@ -16,20 +16,23 @@
     .about__cards {
         width: 100%;
         @include flex_align_center-between;
-        gap: 1%;
+        gap: 5%;
+        height: 21.13rem;
         margin-bottom: 3.13rem;
 
         .about__card {
-            width: 23.13rem;
-            height: 21.13rem;
             cursor: pointer;
+            height: 100%;
+            width: 33%;
 
             &:nth-child(odd) {
                 background-image: url(../about__cards/about2.png);
+                background-size: 100% 100%;
             }
 
             &:nth-child(even) {
                 background-image: url(../about__cards/about1.png);  
+                background-size: 100% 100%;
             }
 
             &:hover > .card__content {

@@ -38,6 +38,10 @@
             position: absolute;
             bottom: -20%;
             left: 65%;
+            @media (max-width: 780px) {
+                bottom: -20%;
+                left: 55%;
+            }
         }
     }
 }

@@ -11,11 +11,16 @@
 </head>
 
 <body>
-    <div class="header-banner background">
+    <div id="header-banner" class="header-banner background">
         <div class="header-banner__background-opacity opacity">
             <header class="header section">
                 <img src="logos/MoGo.svg" alt="MoGo logo">
                 <nav class="header__menu">
+
+                    <div id="menu__btn">
+                        <span></span>
+                    </div>
+                    
                     <ul class="menu__list fs6">
                         <li class="menu__item"><a href="#">About</a></li>
                         <li class="menu__item"><a href="#">Service</a></li>
@@ -41,7 +46,9 @@
                 </div>
 
                 <div class="banner__middle"><button class="banner__button fs4">Learn more</button></div>
+            </section>
 
+            <section class="banner__bottom-wrap section">
                 <div class="banner__bottom fs5">
                     <div class="bottom__card">
                         <p><span class="fs3">01</span>Intro</p>
@@ -171,9 +178,24 @@
                 </div>
 
                 <div class="all-devices__content">
-                    <img class="tablet-content" src="all-devices/1.png" alt="Tablet">
-                    <img class="tablet-container" src="all-devices/tablet.png" alt="tablet view">
-                    <img class="smartphone" src="all-devices/2.png" alt="Smartphone">
+                    <picture>
+                        <source srcset="all-devices/medium/1.png" media="(max-width:1024px)" media="(min-width:700px)">
+                        <source srcset="all-devices/small/1.png" media="(max-width:700px)">
+                        <img class="tablet-content" src="all-devices/1.png" alt="Tablet">
+                    </picture>
+
+                    <picture>
+                        <source srcset="all-devices/medium/tablet.png" media="(max-width:1024px)" media="(min-width:700px)">
+                        <source srcset="all-devices/small/tablet.png" media="(max-width:700px)">
+                        <img class="tablet-container" src="all-devices/tablet.png" alt="tablet view">
+                    </picture>
+
+                    <picture>
+                        <source srcset="all-devices/medium/2.png" media="(max-width:1024px)" media="(min-width:700px)">
+                        <source srcset="all-devices/small/2.png" media="(max-width:700px)">
+                        <img class="smartphone" src="all-devices/2.png" alt="Smartphone">
+                    </picture>
+
                 </div>
             </section>
         </div>
@@ -621,6 +643,7 @@
         <p class="fs6">Copyright © 2021 mogo. All Rights Reserved</p>
     </footer>
 
+    <script src="./JS/top-menu.js"></script>
     <script src="JS/service_content_buttons.js"></script>
     <script src="index.js"></script>
 </body>

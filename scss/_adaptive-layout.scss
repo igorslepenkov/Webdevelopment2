@@ -1,5 +1,66 @@
 @media (max-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+
     .section {
         margin: 0 1.5% 3.5rem;
+    }
+}
+
+@media (max-width: 860px) {
+    .bottom {
+        .bottom__cards {
+            flex-direction: column;
+            gap: 30px;
+
+            .bottom__card {
+                text-align: center;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .banner__head {
+        white-space: normal;
+    }
+
+    .about {
+        .about__cards {
+            @include flex_align_center(column);
+            gap: 5%;
+            height: 57.57rem;
+
+            .about__card {
+                width: 90%;
+                position: relative;
+
+                &:hover > .card__content {
+                    opacity: 1;
+                    transform: translate(0, 0);
+                }
+
+                .card__content {
+                    @include flex_align_center;
+                    gap: 5%;
+                    box-sizing: border-box;
+                    height: 20%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .amazing-services {
+        .amazing-services__cards {
+            @include flex_align_center(column);
+        }
     }
 }

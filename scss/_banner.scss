@@ -1,10 +1,11 @@
 .banner {
-    height: 92.2%;
+    align-self: center;
+    grid-row: 2/3;
 }
 
 .banner__head {
     @include head(rgb(255, 255, 255), rgb(255, 255, 255));
-    flex-grow: 2;
+    white-space: nowrap;
 }
 
 .banner__middle {
@@ -13,7 +14,7 @@
         box-sizing: border-box;
         width: 23.01rem;
         height: 4.85rem;
-        margin: 11% 0;
+        margin: 4.6rem 0;
         background: transparent;
         border: 4px solid rgb(255, 255, 255);
         @include font3(rgb(255, 255, 255));
@@ -29,12 +30,16 @@
     }
 }
 
+.banner__bottom-wrap {
+    grid-row: 3/4;
+}
 .banner__bottom {
     @include flex_align_center-between;
     width: 100%;
     flex-grow: 1;
     @include font5($light_yellow);
     text-transform: uppercase;
+    align-self: flex-end;
 
     .bottom__card {
         width: 24%;
