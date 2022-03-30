@@ -179,9 +179,10 @@
 
                 <div class="all-devices__content">
                     <picture>
-                        <source srcset="all-devices/medium/1.png" media="(max-width:1024px)" media="(min-width:700px)">
-                        <source srcset="all-devices/small/1.png" media="(max-width:700px)">
-                        <img class="tablet-content" src="all-devices/1.png" alt="Tablet">
+                        <source srcset="all-devices/1.png" media="(min-width:1024px)">
+                        <source srcset="all-devices/medium/1.png" media="(min-width:520px)">
+                        <source srcset="all-devices/small/ipad.png" media="(min-width:0px)">
+                        <img class="tablet-content" src="all-devices/small/ipad.png" alt="Tablet">
                     </picture>
 
                     <picture>
@@ -191,8 +192,9 @@
                     </picture>
 
                     <picture>
-                        <source srcset="all-devices/medium/2.png" media="(max-width:1024px)" media="(min-width:700px)">
-                        <source srcset="all-devices/small/2.png" media="(max-width:700px)">
+                        <source srcset="all-devices/2.png" media="(min-width:1024px)">
+                        <source srcset="all-devices/medium/2.png" media="(min-width:520px)">
+                        <source srcset="all-devices/small/2.png" media="(min-width:0px)">
                         <img class="smartphone" src="all-devices/2.png" alt="Smartphone">
                     </picture>
 
@@ -211,7 +213,14 @@
             Aliquet congue sit fermentum risus feugiat.
         </p>
         <div class="service__content">
-            <div class="content__left"><img src="service_content/1.png" alt="Service photo"></div>
+            <div class="content__left">
+                <picture>
+                    <source srcset="service_content/1.png" media="(min-width:1024px)">
+                    <source srcset="service_content/medium/1.png" media="(min-width:700px)" media="(max-width:1024px)">
+                    <source srcset="service_content/small/1.png" media="(max-width:700px)">
+                    <img src="service_content/1.png" alt="Service photo">
+                </picture>
+            </div>
             <div class="content__right">
                 <div class="content__card card1">
                     <div class="card__button">
@@ -261,7 +270,7 @@
 
     <div class="reviews-wrap">
         <section class="reviews section">
-            <div class="reviews__icon"><img src="./reviews__icons/icon.svg" alt="Message icon"></div>
+            <div class="reviews__icon jon"><img src="./reviews__icons/icon.svg" alt="Message icon"></div>
             <div class="reviews__content">
                 <div class="content__text">
                     <p class="text__article fs4">
@@ -296,10 +305,10 @@
                             <img src="./our-team_photos/1.png" alt="Kandin Dias photo">
                         </picture>
                         <div class="content__logo">
-                            <i class="fa-brands fa-facebook-f fa-lg"></i>
-                            <i class="fa-brands fa-twitter fa-lg"></i>
-                            <i class="fa-brands fa-pinterest-p fa-lg"></i>
-                            <i class="fa-brands fa-instagram fa-lg"></i>
+                            <i class="fa-brands fa-facebook-f fa-2xl"></i>
+                            <i class="fa-brands fa-twitter fa-2xl"></i>
+                            <i class="fa-brands fa-pinterest-p fa-2xl"></i>
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
                         </div>
                     </div>
                     <div class="content__bottom">
@@ -319,10 +328,10 @@
                             <img src="./our-team_photos/2.png" alt="Zain Calzoni photo">
                         </picture>
                         <div class="content__logo">
-                            <i class="fa-brands fa-facebook-f fa-lg"></i>
-                            <i class="fa-brands fa-twitter fa-lg"></i>
-                            <i class="fa-brands fa-pinterest-p fa-lg"></i>
-                            <i class="fa-brands fa-instagram fa-lg"></i>
+                            <i class="fa-brands fa-facebook-f fa-2xl"></i>
+                            <i class="fa-brands fa-twitter fa-2xl"></i>
+                            <i class="fa-brands fa-pinterest-p fa-2xl"></i>
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
                         </div>
                     </div>
                     <div class="content__bottom">
@@ -342,10 +351,10 @@
                             <img src="./our-team_photos/3.png" alt="Charlie George photo">
                         </picture>
                         <div class="content__logo">
-                            <i class="fa-brands fa-facebook-f fa-lg"></i>
-                            <i class="fa-brands fa-twitter fa-lg"></i>
-                            <i class="fa-brands fa-pinterest-p fa-lg"></i>
-                            <i class="fa-brands fa-instagram fa-lg"></i>
+                            <i class="fa-brands fa-facebook-f fa-2xl"></i>
+                            <i class="fa-brands fa-twitter fa-2xl"></i>
+                            <i class="fa-brands fa-pinterest-p fa-2xl"></i>
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
                         </div>
                     </div>
                     <div class="content__bottom">
@@ -433,8 +442,14 @@
             </div>
     </section>
     <div class="reviews-wrap" style="background-color: rgb(255, 255, 255);">
-        <section class="reviews section">
-            <div class="reviews__icon"><img src="./reviews__icons/James.png" alt="James icon"></div>
+        <section class="reviews section james__section">
+            <div class="reviews__icon james">
+                <picture>
+                    <source srcset="./reviews__icons/James.png" media="(min-width:520px)">
+                    <source srcset="./reviews__icons/james-small.png" media="(min-width:0px)">
+                    <img src="./reviews__icons/James.png" alt="James icon">
+                </picture>
+            </div>
             <div class="reviews__content">
                 <div class="content__text">
                     <p class="text__article fs4">

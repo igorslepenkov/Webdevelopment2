@@ -5,26 +5,27 @@
     .reviews {
         @include flex_align_center-between;
 
+        &::before {
+            content: url(../service_content/arrow_down.svg);
+            transform: rotate(270deg);
+            margin-right: 3.5rem;
+            cursor: pointer;
+        }
+
+        &::after {
+            content: url(../service_content/arrow_down.svg);
+            transform: rotate(90deg);
+            margin-left: 3.5rem;
+            cursor: pointer;
+        }
+
         .reviews__icon {
             margin-right: 2rem;
             @include flex_align_center-between;
-
-            &::before {
-                content: url(../service_content/arrow_down.svg);
-                transform: rotate(270deg);
-                margin-right: 3.5rem;
-                cursor: pointer;
-            }
         }
 
         .reviews__content {
             @include flex_align_center-between;
-            &::after {
-                content: url(../service_content/arrow_down.svg);
-                transform: rotate(90deg);
-                margin-left: 3.5rem;
-                cursor: pointer;
-            }
 
             .text__article {
                 @include font4(rgb(169, 175, 177));

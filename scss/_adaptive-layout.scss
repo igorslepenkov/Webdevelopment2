@@ -6,6 +6,10 @@
     .section {
         margin: 0 1.5% 3.5rem;
     }
+
+    .about {
+        margin-top: 3.5rem;
+    }
 }
 
 @media (max-width: 860px) {
@@ -58,9 +62,217 @@
         }
     }
 
+    .futures__wrap {
+        .futures {
+            @include flex_align_center;
+            flex-wrap: wrap;
+            .futures__card {
+                width: 40%;
+                border-left: none;
+                border-bottom: 1px solid rgb(255, 255, 255); 
+            }
+            .futures__card:last-child {
+                border-right: none;
+                border-bottom: none;
+            }
+        }
+    }
+
     .amazing-services {
         .amazing-services__cards {
             @include flex_align_center(column);
+        }
+    }
+
+    .reviews-wrap {
+        .reviews {
+            @include flex_align_center(column);
+            .jon {
+                display: none;
+            }
+
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                content: url(../reviews__icons/dots.svg);
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .service {
+        .service__content{
+            @include flex_align_center(column);
+
+            .content__left {
+                margin-right: 0;
+                width: 100%;
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+            .content__right {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }    
+
+    .our-team {
+        .our-team__cards {
+            flex-direction: column;
+            gap: 2rem;
+            .team__card {
+                max-width: 80%;
+                .card__content {
+                    .content__top {
+                        position: relative;
+                        .content__logo {
+                            position: absolute;
+                            height: fit-content;
+                            background: transparent;
+                            opacity: 1;
+                            top: 80%;
+                            left: 5%;
+                            transition: none;
+
+                            &:hover {
+                                opacity: 1;
+                                transform: translate(0%, 0%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .partners-wrap {
+        .partners {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4 1fr);
+            justify-items: center;
+
+            img:nth-child(1) {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+
+            img:nth-child(2) {
+                grid-column: 3/4;
+                grid-row: 1/2;
+            }
+
+            img:nth-child(3) {
+                grid-column: 1/4;
+                grid-row: 2/3;
+            }
+
+            img:nth-child(4) {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+
+            img:nth-child(5) {
+                grid-column: 3/4;
+                grid-row: 3/4;
+            }
+
+            img:nth-child(6) {
+                grid-column: 1/4;
+                grid-row: 4/5;
+            }
+        }
+    }
+
+    .happy-clients__cards {
+        grid-template-columns: 1fr;
+
+        .card1::before {
+            content: url(../happy-clients/small/client1.png);
+            margin-right: 0;
+        }
+        .card2::before {
+            content: url(../happy-clients/small/client2.png);
+            margin-right: 0;
+        }
+        .card3::before {
+            content: url(../happy-clients/small/client3.png);
+            margin-right: 0;
+        }
+        .card4::before {
+            content: url(../happy-clients/small/client4.png);
+            margin-right: 0;
+        }
+        
+        .clients__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+    
+            .card__content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                text-align: center;
+            }
+        }
+    }
+
+    .our-stories {
+        .our-stories__cards {
+            @include flex_align_center-between(column);
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .header-banner__background-opacity {
+        .header {
+            .header__menu {
+                #menu__btn {
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+    .banner__middle {
+        .banner__button {
+            margin: 3rem 0;
+        }
+    }
+
+    .all-devices {
+        .all-devices__content {
+            position: relative;
+            margin-bottom: 3.75rem;
+    
+            .tablet-container {
+                display: none;
+            }
+    
+            .tablet-content {
+                position: relative;
+                top: 3%;
+                left: 50%;
+                transform: translate(-50%);
+            }
         }
     }
 }
