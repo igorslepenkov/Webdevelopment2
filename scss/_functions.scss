@@ -1,3 +1,0 @@
-@function get_width($min_size, $max_size) {
-    @return $min_size + ($max_size — $min size) * ((100vw — $min_viewport_width) / ($max_viewport_width — $min_viewport_width))
-}

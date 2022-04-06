@@ -1,0 +1,74 @@
+.happy-clients-wrap {
+    background-image: url(../happy-clients/clients_background.png);
+
+    .wrap-opacity {
+        background: rgba(255, 255, 255, 0.9);
+    }
+}
+
+.happy-clients {
+    padding-bottom: 3rem;
+    .happy-clients__head {
+        @include head($black, $tomato);
+        .head__h {
+            line-height: 5.1rem;
+        }
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.happy-clients__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .clients__card {
+        display: flex;
+        justify-content: space-between;
+
+        .card__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            .card__name {
+                @include font3;
+                text-transform: uppercase;
+                margin: 0;
+            }
+    
+            .card__position {
+                @include font5;
+                text-transform: uppercase;
+                margin: 1rem 0;
+            }
+    
+            .card__separator {
+                width: 4.4rem;
+                border: 1.5px solid $tomato;
+                background-color: $tomato;
+                margin: 0;
+            }
+    
+            .card__text {
+                margin: 2rem 0;
+            }
+        }
+    }
+
+    .card1::before {
+        content: url(../happy-clients/client1.png);
+        margin-right: 3rem;
+    }
+    .card2::before {
+        content: url(../happy-clients/client2.png);
+        margin-right: 3rem;
+    }
+    .card3::before {
+        content: url(../happy-clients/client3.png);
+        margin-right: 3rem;
+    }
+    .card4::before {
+        content: url(../happy-clients/client4.png);
+        margin-right: 3rem;
+    }
+}

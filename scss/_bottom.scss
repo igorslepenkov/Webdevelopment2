@@ -1,0 +1,120 @@
+.bottom {
+    margin-bottom: 2.5rem;
+    .bottom__cards {
+        @include flex_align_start-between;
+        gap: 3%;
+
+        .bottom__card {
+            width: 30%;
+            .card__title {
+                @include font5;
+                text-transform: uppercase;
+                margin-top: 0;
+            }
+        }
+
+        .card1 {
+            .bottom__text {
+                @include font5($grey)
+            }
+
+            .followers {
+                @include font5;
+                text-transform: uppercase;
+                span {
+                    @include font3;
+                }
+            }
+
+            hr {
+                border: 1px solid $grey;
+                background-color: $grey;
+            }
+
+            .bottom__follow {
+                @include flex_align_center-between;
+
+                p{
+                    @include font5($grey);
+                    margin-right: 20%;
+                }
+            }
+
+            form {
+
+                @include flex_align_start-between;
+
+                input {
+                    @include font5($grey);
+                    text-align: center;
+                    outline: none;
+                    border: 1px solid $grey;
+                    box-sizing: border-box;
+                    min-height: 2.5rem;
+                    width: 60%;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                button {
+                    margin: 0;
+                    padding: 0;
+                    color: rgb(255, 255, 255);
+                    background-color: $light_blue;
+                    border: none;
+                    min-height: 2.5rem;
+                    width: 40%;
+                }
+            }
+        }
+
+        .card2 {
+            @include flex_align_start-center(column);
+            gap: 4%;
+            .article {
+                @include flex_align_start-center;
+                gap: 5%;
+
+                .article__text {
+                    .text {
+                        @include font3;
+                        margin-top: 0;
+                        text-transform: uppercase;
+                    }
+
+                    .date {
+                        @include font5;
+                    }
+                }
+            }
+        }
+
+        .card3 {
+            .card__gallery {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                margin-bottom: 2.5rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            a {
+                @include font5($grey);
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.footer {
+    border-top: 1px solid $grey;
+    margin-bottom: 0;
+    p {
+        @include font3;
+        line-height: 1rem;
+    }
+}

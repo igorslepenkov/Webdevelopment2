@@ -1,0 +1,102 @@
+.service {
+    text-align: center;
+    .service__head {
+        @include head($black, $tomato);
+
+        .head__h {
+            line-height: 5.1rem;
+        }
+    }
+
+    & > p {
+        @include font5;
+        margin: 3.75rem;
+    }
+
+    .service__content{
+        width: 100%;
+        @include flex_align_start-center;
+
+        .content__left {
+            margin-right: 2%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                max-width: 35.63rem;
+                max-height: 30.19rem;
+            }
+        }
+
+        .content__right {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .content__card {
+                width: 100%;
+                border: 1px solid rgb(198, 203, 205);
+                max-width: 35.63rem;
+
+                .scroll {
+                    max-height: 7rem;
+                    overflow-y: scroll;
+                    @include font5;
+                    display: none;
+                    scrollbar-width: 6px;
+                    scrollbar-color: $light_blue;
+                    box-sizing: border-box;
+                    border-top: 1px solid rgb(198, 203, 205);
+                    padding: 5px;
+
+                    &::-webkit-scrollbar {
+                        width: 6px;
+                        background-color: rgb(245, 245, 245);
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background-color: $light_blue;
+                    }
+                }
+
+                .opened {
+                    display: block;
+                }
+
+                .card__button {
+                    @include flex_align_center-between;
+                    padding: 0 3%;
+
+                    h3 {
+                        @include font3;
+                        @include flex_align_center-between;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .card1 {
+                h3::before {
+                    content: url(../service_content/icon1.svg);
+                    margin-right: 1.9rem;
+                }
+            }
+
+            .card2 {
+                h3::before {
+                    content: url(../service_content/icon2.svg);
+                    margin-right: 1.9rem;
+                }
+            }
+
+            .card3 {
+                h3::before {
+                    content: url(../service_content/icon3.svg);
+                    margin-right: 1.9rem;
+                }
+            }
+
+        }
+    }
+}

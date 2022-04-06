@@ -1,0 +1,47 @@
+.all-devices__background {
+    background-image: url(../background-images/all-devices.png);
+
+    .all-devices__background-opacity {
+        background: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.all-devices {
+    .all-devices__head {
+        @include head($black, $tomato);
+        .head__h {
+            line-height: 5.1rem;
+        }
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .all-devices__content {
+        position: relative;
+        margin-bottom: 3.75rem;
+
+        .tablet-container {
+            position: relative;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+        }
+
+        .tablet-content {
+            position: absolute;
+            top: 3%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .smartphone {
+            position: absolute;
+            bottom: -20%;
+            left: 65%;
+            @media (max-width: 780px) {
+                bottom: -20%;
+                left: 55%;
+            }
+        }
+    }
+}
